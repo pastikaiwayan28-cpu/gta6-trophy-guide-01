@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Atlas — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <p class="kicker">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+  <h1>Leonida Trophy Atlas</h1>
+  <p class="sub">Every trophy of GTA VI with a guide written for this page, its sources cited beside it, a roadmap to the platinum, and a tracker that remembers your progress. Works offline — nothing here loads over the network.</p>
+  <div class="progress-wrap">
+    <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+    <div class="bar"><div id="progressFill" style="width:0%"></div></div>
+    <div class="grade-chips" id="gradeChips"></div>
+  </div>
+  <ul class="stats">
+    <li><strong>55</strong> trophies</li>
+    <li><strong>1</strong> platinum</li>
+    <li><strong>~200 h</strong> to platinum</li>
+    <li><strong>4/10</strong> difficulty</li>
+    <li><strong>1</strong> potentially missable</li>
+    <li><strong>0</strong> online trophies</li>
+  </ul>
+  <p class="hero-links"><a href="#roadmap">Roadmap to the platinum ↓</a></p>
+</header>
+
+<div class="controls" id="controls">
+  <input id="search" type="search" placeholder="Search trophies, guides, places…" aria-label="Search trophies">
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+    </select>
+  </label>
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="check"><input id="spoilers" type="checkbox"> Hide story spoilers</label>
+  <label class="check"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <button id="export" type="button">Export progress</button>
+  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+  <button id="reset" type="button">Reset</button>
+</div>
+<p class="count-line" id="countLine"></p>
+
+<main class="grid" id="grid"></main>
+
+<section class="roadmap" id="roadmap">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">Three steps, in order. The story first, then the 100% checklist, then cleanup. Nothing on the checklist is missable — the only thing you can lose is one meditation in Chapter 1.</p>
+  <div class="steps">
+    <article class="step">
+      <p class="step-no">Step 1 · 22 trophies</p>
+      <h3>Play the story</h3>
+      <p>Chapters 1–5. Every story trophy pops on its own — 12 chapter and mission trophies. While you play, do the one thing that can be missed: the Chapter 1 balcony meditation for <em>Positive Mental Attitude</em>. Start the side-character questlines as they open (Andy, Kenton, Billy, Randy, Tyrone) and the partner trophies once both characters are playable, after Chapter 2's “Coffee Break”.</p>
+    </article>
+    <article class="step">
+      <p class="step-no">Step 2 · 24 trophies</p>
+      <h3>Chase 100% completion</h3>
+      <p>After the story, open Progress &gt; Stats &gt; 100% Completion and work the checklist: 100 optional missions, 200 vehicles scanned, 100 animals studied, 70 of 80 challenges, all robberies, shooting ranges, drone races and Bret's target decks. This is where <em>A Long Road</em> lives — and most of the silver trophies.</p>
+    </article>
+    <article class="step">
+      <p class="step-no">Step 3 · 9 trophies</p>
+      <h3>Cleanup</h3>
+      <p>Finish what's left: the 9 activity types (<em>Master of None</em>), the 500 Criminal Profile actions, and the five trophies whose method is still unconfirmed at launch (<em>In The Beginning…</em>, <em>Capital Offense</em>, <em>Bad Luck, I Guess</em>, <em>The Truth Is Out There</em>, <em>Ten Pin</em>) — check this guide's sources for updates. Then the platinum pops.</p>
+    </article>
+  </div>
+  <p class="missable-alert"><strong>One trophy can be missed:</strong> <em>Positive Mental Attitude</em> — meditate at all 18 spots. The Chapter 1 one is on Jason's balcony: after the mission “Down to Earth”, talk to Lucia in the kitchen in the morning, follow her to the balcony and choose “Accept”. It is gone forever after Chapter 1. (It cannot block <em>A Long Road</em> — 100% needs only 15 of 18 spots.)</p>
+</section>
+
+<footer>
+  <h2>Sources &amp; notes</h2>
+  <p>Trophy names, descriptions and grades come from the official trophy list as published by Exophase and PSNProfiles (the two lists agree). Methods were researched from <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx's GTA 6 Trophy Guide &amp; Roadmap</a> and the guides named beside each trophy. Every guide on this page is written in our own words for this page — a source is cited, never copied.</p>
+  <p>List current as of 18 November 2026. Five trophies were still unconfirmed at launch; their guides say so honestly instead of inventing a method. Progress is saved only in your browser (localStorage) and can be exported to a file and imported back.</p>
+  <p class="disclaimer">Unofficial fan guide. Not affiliated with Rockstar Games or Sony Interactive Entertainment. No Rockstar logo, artwork or game screenshots are used.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
