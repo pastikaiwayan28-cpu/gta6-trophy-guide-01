@@ -89,7 +89,6 @@ for (const shot of shots) {
 }
 
 // --- Hand the guide in. ---
-rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 cpSync(join(repoRoot, "app"), join(outDir, "app"), { recursive: true });
 cpSync(join(repoRoot, "screenshots"), join(outDir, "screenshots"), { recursive: true });
